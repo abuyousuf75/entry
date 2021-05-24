@@ -1,0 +1,460 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*====Nav Part Css Bellow====*/
+.navbar{
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    z-index: 999;
+    background:rgba(17, 17, 17, 0.30);
+}
+.navbar-brand {
+    padding-top: 10px;
+    padding-bottom: 10px;
+   
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 50px;
+    padding-left: 50px;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all linear 0.4s;
+    position: relative;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color:#ff3c00;
+}
+.navbar-light .navbar-nav .nav-link::after{
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    content: "";
+    width: 0;
+    height: 1px;
+    background: #ff3c00;
+    opacity: 0;
+    transition: all linear 0.4s;
+}
+.navbar-light .navbar-nav .nav-link:hover::after{
+    opacity: 1;
+   width: 100%;
+}
+
+/*====Banner Part Css Bellow====*/
+
+.banner-bg{
+    background: url(../images/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center ;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.banner-bg::after{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    background:rgba(51, 51, 51, 0.20);
+    content: "";
+}
+
+.banner-main{
+    height: 100vh;
+    
+}
+.banner-text{
+    z-index: 1;
+}
+
+.banner-text h3{
+    font-size: 50px;
+    color:#fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+.banner-text p{
+    font-size: 14px;
+    font-weight: 600;
+    color:#ddd;
+   padding: 0px 300px;
+   line-height: 26px;
+}
+
+
+
+.banner-btn{
+    padding-top: 50px;
+}
+
+.banner-btn a{
+    padding: 12px 20px;
+    background:#cf0e19;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-left: 10px;
+    color:#fff;
+    border:1px solid #cf0e19;
+}
+.btn2{
+    border-color: #ddd!important;
+    background-color:transparent!important;
+}
+
+/*====About Part Css Bellow====*/
+
+#about{
+    background: url(../images/aboutbg.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center ;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.about-head h3{
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+
+.about-left{
+    position: relative;
+}
+.about-overly{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(17, 17, 17, 0.40);
+}
+
+.about-overly-text i{
+    font-size: 20px;
+    color: #333;
+    background: orange;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+}
+
+.about-right p{
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 600;
+    padding: 0px 30px;
+    color: #ddd;
+}
+
+/*====Servics Part Css Bellow====*/
+#servics{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.servics-head h3{
+    color:#333;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+.servics-iteam{
+    position: relative;
+}
+
+.servics-text {
+    background:#fcfcfc;
+    border-radius: 4px;
+   top:90%;
+   left: 14%;
+   position: absolute;
+    padding: 10px 20px 20px;;
+}
+
+.servics-icon{
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 30px;
+    border-radius: 50%;
+    color: #333;
+    background: #fff;
+    margin: 0 auto;
+}
+
+.servics-text h4{
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    text-transform: uppercase;
+}
+
+/*====Gallery Part Css Bellow====*/
+
+#gallery{
+    overflow: hidden;
+    padding-top: 80px;
+}
+.gal-bg{
+    background: url(../images/galbg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center ;
+    width: 100%;
+    position: relative;
+}
+
+.gal-bg::after{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    background:rgba(17, 17, 17, 0.70);
+    content: "";
+}
+.gal-main{
+    z-index: 1;
+    position: relative;
+}
+.gal-head h3{
+    padding-top: 30px;
+    font-size: 28px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.gal-pd{
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.gal-img{
+    position: relative;
+   
+}
+.gal-overy{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   
+}
+
+.gal-cont  i{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    background: #333;
+    font-size: 20px;
+    color:orange;
+}
+
+
+/*====Blog Part Css Bellow====*/
+
+#blog{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: #2c3741;
+}
+
+.blog-head h3{
+    padding-top: 30px;
+    font-size: 28px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+
+.blog-main{
+    position: relative;
+}
+.blog-overly{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(51, 51, 51, 0.20);
+}
+
+.blog-btn{
+    background:#1b2936;
+    padding: 10px 20px;
+}
+.blog-btn h4{
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.blog-text{
+    background: #fff;
+    padding: 15px 20px;
+}
+
+.blog-text h4{
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+.blog-text p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color:#333333;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+
+/*====Footer Part Css Bellow====*/
+
+#footer{
+    background: url(../images/footter-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center ;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.footer-left h4{
+    color: #fff;
+    font-weight: 600;
+    font-size:18px;
+}
+
+.footer-left p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color:#d1d1d1;
+    font-size: 14px;
+    line-height: 26px;
+    padding-bottom: 20px;
+}
+
+.footer-left input{
+    width: 100%;
+    padding: 6px 6px;
+    background-color: #565f66;
+    border:none;
+    
+}
+.footer-left input::placeholder{
+    color: #bcc0c4;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+   
+}
+.footer-form{
+    position: relative;
+}
+.footer-icon{
+    position: absolute;
+    right: 0;
+    top: 0px;
+    background-color:#006db7;
+    width: 36px;
+    height: 36px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 2px;
+    color: #fff;
+}
+
+.footer-link h4{
+    color: #fff;
+    font-weight: 600;
+    font-size:18px;
+}
+
+.footer-link ul li a{
+    color: #fff;
+   line-height: 40px;
+   font-size: 15px;
+   font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contuct-iteam h4{
+    color: #fff;
+    font-weight: 600;
+    font-size:18px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+.contuct-iteam p{
+    color: #fff;
+    font-weight: 400;
+    font-size:14px;
+   
+}
+.contuct-iteam h5{
+    color: #fff;
+    font-weight: 400;
+    font-size:14px;
+}
+
+.social{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.socail-icon i{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    background: #cf0e19;
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+}
+
+/*====Nav Part Css Bellow====*/
+/*====Nav Part Css Bellow====*/
+/*====Nav Part Css Bellow====*/
+/*====Nav Part Css Bellow====*/
+/*====Nav Part Css Bellow====*/
+/*====Nav Part Css Bellow====*/
+/*====Nav Part Css Bellow====*/
